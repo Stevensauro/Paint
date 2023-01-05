@@ -2,7 +2,7 @@ let canvas = document.querySelector("canvas")
 let pincel = canvas.getContext("2d")
 
 pincel.fillStyle = 'gray'
-pincel.fillRect(0, 0, 800, 800)
+pincel.fillRect(0, 0, 2000, 2400)
 
 function getMousePos(canvas, evt) {
     var rect = canvas.getBoundingClientRect(),
@@ -75,9 +75,9 @@ pincel.beginPath()
 pincel.moveTo(0, 40)
 pincel.lineTo(120, 40)
 pincel.lineTo(120, 0)
-pincel.lineTo(800, 0)
-pincel.lineTo(800, 800)
-pincel.lineTo(0, 800)
+pincel.lineTo(2000, 0)
+pincel.lineTo(2000, 2400)
+pincel.lineTo(0, 2400)
 pincel.lineTo(0, 40)
 pincel.closePath()
 pincel.clip()
